@@ -16,18 +16,16 @@
 
             <v-list-item-content>
               <v-list-item-title v-text="driver.name"></v-list-item-title>
-              <v-list-tile-sub-title
-                v-text="driver.car"
-              ></v-list-tile-sub-title>
+              <v-list-item-subtitle v-text="driver.car"></v-list-item-subtitle>
             </v-list-item-content>
 
             <v-spacer></v-spacer>
 
             <v-list-item-content>
               <v-list-item-title> $ {{ driver.earning }}</v-list-item-title>
-              <v-list-tile-sub-title
+              <v-list-item-subtitle
                 v-text="driver.distance"
-              ></v-list-tile-sub-title>
+              ></v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list>

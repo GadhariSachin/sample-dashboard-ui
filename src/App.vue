@@ -68,7 +68,6 @@ export default {
   margin-top: 30px;
 }
 .dashboard--servicecenters {
-  outline: 1px solid;
   flex: 0.6;
 }
 .dashboard--services--stats {
