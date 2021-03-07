@@ -1,16 +1,21 @@
 <template>
-  <div style="margin-top: 65px">
+  <div
+    style="margin-top: 65px"
+    @mouseover="showProfile = false"
+    @mouseout="showProfile = true"
+  >
     <v-navigation-drawer permanent expand-on-hover mini-variant.sync="mini">
       <v-list nav dense>
         <v-list-item>
-          <v-list-item-avatar class="profile--image">
+          <v-list-item-avatar :class="{ 'profile--image': showProfile }">
             <v-img
-              src="https://randomuser.me/api/portraits/women/85.jpg"
+              src="https://cdn.vuetifyjs.com/images/john.jpg"
+              alt="John"
             ></v-img>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title> Welcome </v-list-item-title>
-            <v-list-item-subtitle>Sandra Adams</v-list-item-subtitle>
+            <v-list-item-subtitle>John Adams</v-list-item-subtitle>
           </v-list-item-content></v-list-item
         >
 
@@ -66,7 +71,7 @@ export default {
   name: "SidebarComponent",
   data() {
     return {
-      showProfile: false,
+      showProfile: true,
     };
   },
 };
